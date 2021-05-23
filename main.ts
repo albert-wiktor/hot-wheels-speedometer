@@ -14,7 +14,7 @@ input.onButtonPressed(Button.B, function () {
 pins.onPulsed(DigitalPin.P2, PulseValue.Low, function () {
     if (go) {
         stop = control.millis()
-        game.setScore(Math.round(30 * 1000 / (stop - start)))
+        game.setScore(Math.round(38 * 1000 / (stop - start)))
         go = 0
         for (let index = 0; index < 5; index++) {
             basic.clearScreen()
